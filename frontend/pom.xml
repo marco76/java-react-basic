@@ -2,20 +2,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-  <groupId>dev.marco</groupId>
-    <artifactId>java-react-example</artifactId>
-    <version>0.1-SNAPSHOT</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>dev.marco</groupId>
+      <artifactId>java-react-example</artifactId>
+      <version>0.1-SNAPSHOT</version>
+  </parent>
   <artifactId>frontend</artifactId>
   <packaging>jar</packaging>
+
   <build>
     <plugins>
       <!-- clean the dist directory -->
       <plugin>
         <artifactId>maven-clean-plugin</artifactId>
-        <version>3.1.0</version>
+        <version>3.3.2</version>
         <configuration>
           <filesets>
             <fileset>
@@ -28,7 +30,7 @@
       <plugin>
         <groupId>com.github.eirslett</groupId>
         <artifactId>frontend-maven-plugin</artifactId>
-        <version>1.14.0</version>
+        <version>1.15.0</version>
         <executions>
 
           <!-- Install node and npm -->
@@ -38,7 +40,7 @@
               <goal>install-node-and-npm</goal>
             </goals>
             <configuration>
-              <nodeVersion>v18.18.0</nodeVersion>
+              <nodeVersion>v20.10.0</nodeVersion>
             </configuration>
           </execution>
 

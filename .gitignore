@@ -1,8 +1,8 @@
 /backend/target/
 /node/
 /frontend/bin/
-/node/
 /frontend/node/
+/frontend/build
 /.idea/
 
 
